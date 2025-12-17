@@ -10,8 +10,7 @@
 * Application Flask simple dans [app/app.py](app/app.py)
 * Dockerfile qui permet de déployer l'application flask dans [app/Dockerfile](app/Dockerfile)
 * Workflow GitHub Actions dans [.github/workflows/dockerBuildPush.yml](.github/workflows/dockerBuildPush.yml)
-  * Créer des variables d'environnement secrètes (DOCKERHUB_TOKEN et DOCKERHUB_USERNAME) dans `Settings -> Secrets and variables -> Actions -> New repository secret`
-  * S'assurer d'avoir créer un repository dans Docker Hub qui porte le même nom que le repository GitHub utilisé pour cette pipeline
+  * Créer des variables d'environnement secrètes (DOCKERHUB_TOKEN et DOCKERHUB_USERNAME) dans `Settings -> Secrets and variables -> Actions -> New repository secret` (Générer d'abord votre token dans les paramètres Docker Hub)
   * Modifier la variable d'environnement IMAGE_NAME en mettant le nom de votre image (modifier uniquement "ci-cd-actions-dockerhub-argo")
 * Vérifier que la pipeline s'exécute sans erreur
 * Vérifier que l'image a bien été envoyée dans le repository Docker Hub
