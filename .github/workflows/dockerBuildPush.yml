@@ -7,8 +7,6 @@ on:
     paths:
       - 'k8s/**'
       - 'app/**'
-  pull_request:
-    branches: [ "main" ]
 
 # Variable d'environnement
 env:
