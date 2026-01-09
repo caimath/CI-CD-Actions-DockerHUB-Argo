@@ -5,7 +5,6 @@ on:
   push:
     branches: [ "main" ]
     paths:
-      - 'k8s/**'
       - 'app/**'
 
 # Variable d'environnement
